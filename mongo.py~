@@ -1,0 +1,10 @@
+from pymongo import MongoClient
+client = MongoClient('homer.stuy.edu')
+db = client.test
+collection = db.restaurants
+def borough(x):
+    i = collection.find({'borough':x})
+    s = ""
+    for j in i:
+         s += j.name + ', '
+         print j.name
