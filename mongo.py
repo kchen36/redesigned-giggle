@@ -18,7 +18,7 @@ def bzgs(x,z,g,s):
     return collection.find({"borough" : x, 'address.zipcode' : z, 'grades.grade' : g, 'grades.0.score' : {'$lt' : s}})
 def p(x):
     for i in x:
-	print d['name']
+	print i['name']
         
 p(borough("Bronx"))
 p(zipcode("11214"))
