@@ -23,5 +23,5 @@ def p(x):
 p(borough("Bronx"))
 p(zipcode("11214"))
 p(zipgrade("11214", "A"))
-p(zidscore("11214", 10))
+p(zipscore("11214", 10))
 
